@@ -2,8 +2,8 @@
 
 import Link from "next/link"
 import { Github, Linkedin, Instagram, Mail, Twitter } from 'lucide-react'
-import { Button } from "@/components/ui/button"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import { Button } from "@/app/components/ui/button"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/app/components/ui/tooltip"
 
 const socialLinks = [
   {

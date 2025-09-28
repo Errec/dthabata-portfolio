@@ -1,11 +1,11 @@
-import { Header } from '@/components/header'
-import { Sidebar } from '@/components/sidebar'
-import { Hero } from '@/components/hero'
-import { About } from '@/components/about'
-import { Projects } from '@/components/projects'
-import { Contact } from '@/components/contact'
-import { Footer } from '@/components/footer'
-import { Toaster } from '@/components/ui/toaster'
+import { Header } from '@/app/components/header'
+import { Sidebar } from '@/app/components/sidebar'
+import { Hero } from '@/app/components/hero'
+import { About } from '@/app/components/about'
+import { Projects } from '@/app/components/projects'
+import { Contact } from '@/app/components/contact'
+import { Footer } from '@/app/components/footer'
+import { Toaster } from '@/app/components/ui/toaster'
 
 export default function Home() {
   return (
