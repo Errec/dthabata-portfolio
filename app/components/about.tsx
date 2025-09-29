@@ -35,7 +35,7 @@ export function About() {
           <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Aqui você encontrará mais informações sobre mim, o que faço e minhas habilidades atuais, principalmente em
-            termos de programação e tecnologia
+            termos de programação e tecnologia.
           </p>
         </div>
 
@@ -47,11 +47,11 @@ export function About() {
 
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Sou um <strong className="text-foreground">Desenvolvedor Full Stack</strong> focado em construir e
+                Sou uma <strong className="text-foreground">Desenvolvedora Full Stack</strong> focada em construir e
                 gerenciar o Front-end de websites e aplicações web que levam ao sucesso do produto geral. Confira alguns
-                dos meus trabalhos na seção
+                dos meus trabalhos na seção.
+                {" "}
                 <Link href="#projects" className="text-primary hover:underline font-medium">
-                  {" "}
                   Projetos
                 </Link>
                 .
@@ -61,17 +61,18 @@ export function About() {
                 Também gosto de compartilhar conteúdo relacionado às coisas que aprendi ao longo dos anos em{" "}
                 <strong className="text-foreground">Desenvolvimento Web</strong> para que possa ajudar outras pessoas da
                 comunidade Dev. Sinta-se à vontade para se conectar ou me seguir no meu
+                {" "}
                 <Link
-                  href="https://linkedin.com/in/seuusuario"
+                  href="https://linkedin.com/in/thabatadornelas"
                   target="_blank"
                   className="text-primary hover:underline font-medium"
                 >
-                  {" "}
                   LinkedIn
                 </Link>{" "}
                 e
+                {" "}
                 <Link
-                  href="https://instagram.com/seuusuario"
+                  href="https://instagram.com/thabatadornelas"
                   target="_blank"
                   className="text-primary hover:underline font-medium"
                 >
@@ -85,8 +86,8 @@ export function About() {
                 Estou aberto a oportunidades de <strong className="text-foreground">trabalho</strong> onde posso
                 contribuir, aprender e crescer. Se você tem uma boa oportunidade que combina com minhas habilidades e
                 experiência, não hesite em entrar em
+                {" "}
                 <Link href="#contact" className="text-primary hover:underline font-medium">
-                  {" "}
                   contato
                 </Link>{" "}
                 comigo.
@@ -102,7 +103,7 @@ export function About() {
 
           {/* Skills */}
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-6">Minhas Habilidades</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-6">Minhas habilidades</h3>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {skills.map((skill, index) => (
@@ -121,7 +122,7 @@ export function About() {
                 Estou sempre interessado em novos projetos e oportunidades de colaboração.
               </p>
               <Button variant="outline" asChild>
-                <Link href="#contact">Iniciar Conversa</Link>
+                <Link href="#contact">Iniciar conversa</Link>
               </Button>
             </div>
           </div>

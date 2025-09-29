@@ -1,25 +1,25 @@
 import Link from "next/link"
-import { Github, Linkedin, Instagram, Mail, Heart } from 'lucide-react'
+import { Github, Linkedin, Instagram, Mail, Heart } from "lucide-react"
 
 const socialLinks = [
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/seuusuario",
+    href: "https://linkedin.com/in/thabatadornelas",
     icon: Linkedin,
   },
   {
     name: "GitHub",
-    href: "https://github.com/seuusuario",
+    href: "https://github.com/dthabata",
     icon: Github,
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/seuusuario",
+    href: "https://instagram.com/thabatadornelas",
     icon: Instagram,
   },
   {
     name: "Email",
-    href: "mailto:seu@email.com",
+    href: "mailto:dornelasthabata@gmail.com",
     icon: Mail,
   },
 ]
@@ -33,13 +33,12 @@ export function Footer() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Left side - Info */}
           <div>
-            <h3 className="text-xl font-bold text-foreground mb-2">SEU NOME</h3>
+            <h3 className="text-xl font-bold text-foreground mb-2">THABATA DORNELAS</h3>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Desenvolvedor Full Stack focado em construir experiências web modernas e aplicações que conectam design e
-              funcionalidade.
+              Acredito que a tecnologia é ponte entre pessoas e possibilidades.
             </p>
             <p className="text-sm text-muted-foreground">
-              Desenvolvendo o futuro da web, um projeto por vez.
+              Escrevo em linhas de código soluções eficientes e sustentáveis para impulsionar resultados.
             </p>
           </div>
 
@@ -70,7 +69,7 @@ export function Footer() {
         <div className="border-t border-border pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} Seu Nome. Todos os direitos reservados.
+              © {currentYear} Thabata Dornelas. Todos os direitos reservados.
             </p>
 
             <div className="flex items-center gap-1 text-sm text-muted-foreground">

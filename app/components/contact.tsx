@@ -38,8 +38,8 @@ export function Contact() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">CONTATO</h2>
           <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e entrarei em contato com você
-            o mais rápido possível
+           Entre em contato comigo enviando o formulário abaixo e eu retornarei
+           o mais rápido possível!
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Email</p>
-                    <p className="text-muted-foreground">seu@email.com</p>
+                    <p className="text-muted-foreground">dornelasthabata@gmail.com</p>
                   </div>
                 </div>
 
@@ -71,7 +71,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Telefone</p>
-                    <p className="text-muted-foreground">+55 (11) 99999-9999</p>
+                    <p className="text-muted-foreground">+55 (31) 99667-7177</p>
                   </div>
                 </div>
 
@@ -81,7 +81,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Localização</p>
-                    <p className="text-muted-foreground">São Paulo, Brasil</p>
+                    <p className="text-muted-foreground">Rio de Janeiro/RJ, Brasil</p>
                   </div>
                 </div>
               </div>
@@ -139,7 +139,7 @@ export function Contact() {
                     ) : (
                       <>
                         <Send className="mr-2 h-4 w-4" />
-                        Enviar Mensagem
+                        Enviar mensagem
                       </>
                     )}
                   </Button>

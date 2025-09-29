@@ -42,7 +42,7 @@ export function Header() {
             <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary/60 rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-sm">SN</span>
             </div>
-            <span>Seu Nome</span>
+            <span>Thabata Dornelas</span>
           </Link>
 
           {/* Desktop Navigation */}

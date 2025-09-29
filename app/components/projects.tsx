@@ -7,13 +7,15 @@ import { ExternalLink, Github } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
+
+{/* TODO - Add real projects */}
 const projects = [
   {
     id: 1,
     title: "E-commerce Platform",
     description:
       "Uma plataforma completa de e-commerce construída com Next.js, incluindo carrinho de compras, sistema de pagamento e painel administrativo.",
-    image: "/modern-ecommerce-website.png",
+    image: "/placeholder.svg?height=300&width=500",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "PostgreSQL"],
     liveUrl: "https://projeto1.com",
     githubUrl: "https://github.com/seuusuario/projeto1",
@@ -24,7 +26,7 @@ const projects = [
     title: "Task Management App",
     description:
       "Aplicativo de gerenciamento de tarefas com funcionalidades de colaboração em tempo real, drag & drop e notificações.",
-    image: "/task-management-dashboard.png",
+    image: "/placeholder.svg?height=300&width=500",
     technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
     liveUrl: "https://projeto2.com",
     githubUrl: "https://github.com/seuusuario/projeto2",
@@ -35,7 +37,7 @@ const projects = [
     title: "Weather Dashboard",
     description:
       "Dashboard meteorológico interativo com previsões detalhadas, mapas e gráficos de tendências climáticas.",
-    image: "/weather-dashboard-interface.png",
+    image: "/placeholder.svg?height=300&width=500",
     technologies: ["Vue.js", "Chart.js", "OpenWeather API", "SASS"],
     liveUrl: "https://projeto3.com",
     githubUrl: "https://github.com/seuusuario/projeto3",
@@ -45,7 +47,7 @@ const projects = [
     id: 4,
     title: "Portfolio Website",
     description: "Site de portfólio responsivo com animações suaves, tema dark/light e otimizado para SEO.",
-    image: "/portfolio-website-design.png",
+    image: "/placeholder.svg?height=300&width=500",
     technologies: ["Next.js", "Framer Motion", "Tailwind CSS", "MDX"],
     liveUrl: "https://projeto4.com",
     githubUrl: "https://github.com/seuusuario/projeto4",
@@ -66,13 +68,13 @@ export function Projects() {
           <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Aqui você encontrará alguns dos projetos pessoais e profissionais que criei, cada projeto contém seu próprio
-            estudo de caso
+            estudo de caso!
           </p>
         </div>
 
         {/* Featured Projects */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-foreground mb-8">Projetos em Destaque</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-8">Projetos em destaque</h3>
           <div className="grid lg:grid-cols-2 gap-8">
             {featuredProjects.map((project) => (
               <Card key={project.id} className="overflow-hidden hover:shadow-lg transition-shadow group">
@@ -103,7 +105,7 @@ export function Projects() {
                   <Button asChild size="sm">
                     <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
-                      Ver Projeto
+                      Ver projeto
                     </Link>
                   </Button>
                   <Button variant="outline" size="sm" asChild>
@@ -161,11 +163,11 @@ export function Projects() {
           <div className="bg-background border rounded-lg p-8">
             <h3 className="text-2xl font-bold text-foreground mb-4">Interessado em colaborar?</h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Estou sempre aberto a discutir novos projetos, ideias criativas ou oportunidades para fazer parte da sua
+              Estou sempre aberta a discutir novos projetos, ideias criativas ou oportunidades para fazer parte da sua
               visão.
             </p>
             <Button asChild size="lg">
-              <Link href="#contact">Vamos Conversar</Link>
+              <Link href="#contact">Vamos conversar</Link>
             </Button>
           </div>
         </div>
