@@ -43,7 +43,7 @@ export function About() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Get to know me */}
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-6">Conheça-me melhor!</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-6">Conheça-me melhor</h3>
 
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
@@ -83,7 +83,7 @@ export function About() {
               </p>
 
               <p>
-                Estou aberto a oportunidades de <strong className="text-foreground">trabalho</strong> onde posso
+                Estou aberta a oportunidades de <strong className="text-foreground">trabalho</strong> onde posso
                 contribuir, aprender e crescer. Se você tem uma boa oportunidade que combina com minhas habilidades e
                 experiência, não hesite em entrar em
                 {" "}
@@ -119,7 +119,7 @@ export function About() {
             <div className="mt-8 p-6 bg-muted rounded-lg">
               <h4 className="text-lg font-semibold text-foreground mb-2">Vamos trabalhar juntos?</h4>
               <p className="text-muted-foreground mb-4">
-                Estou sempre interessado em novos projetos e oportunidades de colaboração.
+                Estou sempre interessada em novos projetos e oportunidades de colaboração.
               </p>
               <Button variant="outline" asChild>
                 <Link href="#contact">Iniciar conversa</Link>

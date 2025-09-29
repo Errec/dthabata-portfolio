@@ -8,31 +8,31 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/app/
 const socialLinks = [
   {
     name: "GitHub",
-    href: "https://github.com/seuusuario",
+    href: "https://github.com/dthabata",
     icon: Github,
     color: "hover:text-foreground",
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/seuusuario",
+    href: "https://linkedin.com/in/thabatadornelas",
     icon: Linkedin,
     color: "hover:text-blue-600",
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/seuusuario",
+    href: "https://instagram.com/thabatadornelas",
     icon: Instagram,
     color: "hover:text-pink-600",
   },
   {
     name: "Twitter",
-    href: "https://twitter.com/seuusuario",
+    href: "https://twitter.com/thabatadornelas",
     icon: Twitter,
     color: "hover:text-blue-400",
   },
   {
     name: "Email",
-    href: "mailto:seu@email.com",
+    href: "mailto:dornelasthabata@gmail.com",
     icon: Mail,
     color: "hover:text-green-600",
   },

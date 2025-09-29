@@ -15,25 +15,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Seu Nome - Desenvolvedor Full Stack",
+  title: "Portfólio Thabata",
   description:
     "Portfólio profissional de desenvolvimento web com Next.js, React e tecnologias modernas.",
   keywords: ["desenvolvedor", "full stack", "react", "nextjs", "javascript", "typescript"],
-  authors: [{ name: "Seu Nome" }],
-  creator: "Seu Nome",
+  authors: [{ name: "Thabata Dornelas" }],
+  creator: "Thabata Dornelas",
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://seusite.com",
-    title: "Seu Nome - Desenvolvedor Full Stack",
+    url: "https://thabatadornelas.com",
+    title: "Portfólio Thabata",
     description: "Portfólio profissional de desenvolvimento web",
-    siteName: "Seu Nome Portfolio",
+    siteName: "Portfólio Thabata",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Seu Nome - Desenvolvedor Full Stack",
+    title: "Portfólio Thabata",
     description: "Portfólio profissional de desenvolvimento web",
-    creator: "@seuusuario",
+    creator: "@thabatadornelas",
   },
 };
 
