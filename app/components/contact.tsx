@@ -50,7 +50,7 @@ export function Contact() {
               <div>
                 <h3 className="text-2xl font-bold text-foreground mb-6">Vamos conversar</h3>
                 <p className="text-muted-foreground mb-8">
-                  Estou sempre interessado em ouvir sobre novos projetos e oportunidades.
+                  Estou sempre interessada em ouvir sobre novos projetos e oportunidades.
                 </p>
               </div>
 
@@ -61,7 +61,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Email</p>
-                    <p className="text-muted-foreground">seu@email.com</p>
+                    <p className="text-muted-foreground">dornelasthabata@gmail.com</p>
                   </div>
                 </div>
 
@@ -71,7 +71,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Telefone</p>
-                    <p className="text-muted-foreground">+55 (11) 99999-9999</p>
+                    <p className="text-muted-foreground">+55 (31) 99667-7177</p>
                   </div>
                 </div>
 
@@ -81,7 +81,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Localização</p>
-                    <p className="text-muted-foreground">São Paulo, Brasil</p>
+                    <p className="text-muted-foreground">Rio de Janeiro/RJ, Brasil</p>
                   </div>
                 </div>
               </div>

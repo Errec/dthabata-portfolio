@@ -31,14 +31,14 @@ export function Hero() {
 
         {/* Subtitle */}
         <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-8 font-light max-w-3xl mx-auto">
-          Desenvolvedor Full Stack especializado em criar experiências web modernas e aplicações que conectam design e
+          Desenvolvedora Full Stack especializada em criar experiências web modernas e aplicações que conectam design e
           funcionalidade
         </h2>
 
         {/* Description */}
         <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
           Construo interfaces digitais acessíveis e performáticas usando as mais modernas tecnologias web. 
-          Confira alguns dos meus projetos pessoais e profissionais.
+          Confira alguns dos meus projetos pessoais e profissionais!
         </p>
 
         {/* CTA Buttons */}
