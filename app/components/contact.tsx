@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+
 import { useState } from "react"
 import { Button } from "@/app/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/app/components/ui/card"
@@ -18,7 +19,6 @@ export function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 2000))
 
     toast({
@@ -38,8 +38,8 @@ export function Contact() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">CONTATO</h2>
           <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-           Entre em contato comigo enviando o formulário abaixo e eu retornarei
-           o mais rápido possível!
+            Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e entrarei em contato com você
+            o mais rápido possível
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Email</p>
-                    <p className="text-muted-foreground">dornelasthabata@gmail.com</p>
+                    <p className="text-muted-foreground">seu@email.com</p>
                   </div>
                 </div>
 
@@ -71,7 +71,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Telefone</p>
-                    <p className="text-muted-foreground">+55 (31) 99667-7177</p>
+                    <p className="text-muted-foreground">+55 (11) 99999-9999</p>
                   </div>
                 </div>
 
@@ -81,7 +81,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Localização</p>
-                    <p className="text-muted-foreground">Rio de Janeiro/RJ, Brasil</p>
+                    <p className="text-muted-foreground">São Paulo, Brasil</p>
                   </div>
                 </div>
               </div>
@@ -104,23 +104,31 @@ export function Contact() {
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Nome *</Label>
+                    <div className="space-y-3">
+                      <Label htmlFor="name" className="block mb-3">
+                        Nome *
+                      </Label>
                       <Input id="name" name="name" placeholder="Seu nome completo" required />
                     </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email *</Label>
+                    <div className="space-y-3">
+                      <Label htmlFor="email" className="block mb-3">
+                        Email *
+                      </Label>
                       <Input id="email" name="email" type="email" placeholder="seu@email.com" required />
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="subject">Assunto</Label>
+                  <div className="space-y-3">
+                    <Label htmlFor="subject" className="block mb-3">
+                      Assunto
+                    </Label>
                     <Input id="subject" name="subject" placeholder="Assunto da mensagem" />
                   </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Mensagem *</Label>
+                  <div className="space-y-3">
+                    <Label htmlFor="message" className="block mb-3">
+                      Mensagem *
+                    </Label>
                     <Textarea
                       id="message"
                       name="message"

@@ -7,8 +7,6 @@ import { ExternalLink, Github } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
-
-{/* TODO - Add real projects */}
 const projects = [
   {
     id: 1,
@@ -67,8 +65,8 @@ export function Projects() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">PROJETOS</h2>
           <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Aqui você encontrará alguns dos projetos pessoais e profissionais que criei, cada projeto contém seu próprio
-            estudo de caso!
+            Aqui você encontrará alguns dos projetos pessoais e profissionais que criei, cada um contendo seu próprio
+            estudo de caso
           </p>
         </div>
 
@@ -77,7 +75,10 @@ export function Projects() {
           <h3 className="text-2xl font-bold text-foreground mb-8">Projetos em destaque</h3>
           <div className="grid lg:grid-cols-2 gap-8">
             {featuredProjects.map((project) => (
-              <Card key={project.id} className="overflow-hidden hover:shadow-lg transition-shadow group">
+              <Card
+                key={project.id}
+                className="overflow-hidden hover:shadow-lg dark:hover:shadow-[0_8px_24px_rgba(0,0,0,0.6)] transition-shadow group"
+              >
                 <div className="relative overflow-hidden">
                   <Image
                     src={project.image || "/placeholder.svg"}
@@ -122,10 +123,13 @@ export function Projects() {
 
         {/* Other Projects */}
         <div>
-          <h3 className="text-2xl font-bold text-foreground mb-8">Outros Projetos</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-8">Outros projetos</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {otherProjects.map((project) => (
-              <Card key={project.id} className="hover:shadow-md transition-shadow">
+              <Card
+                key={project.id}
+                className="hover:shadow-md dark:hover:shadow-[0_4px_12px_rgba(0,0,0,0.5)] transition-shadow"
+              >
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <CardTitle className="text-lg">{project.title}</CardTitle>
@@ -158,18 +162,20 @@ export function Projects() {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-background border rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Interessado em colaborar?</h3>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Estou sempre aberta a discutir novos projetos, ideias criativas ou oportunidades para fazer parte da sua
-              visão.
-            </p>
-            <Button asChild size="lg">
-              <Link href="#contact">Vamos conversar</Link>
-            </Button>
-          </div>
+        {/* Updated CTA Section */}
+        <div className="max-w-3xl mx-auto mt-16">
+          <Card className="bg-muted/50 border-border">
+            <CardContent className="p-8 sm:p-12 text-center">
+              <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">Interessado em colaborar?</h3>
+              <p className="text-muted-foreground mb-6 max-w-xl mx-auto leading-relaxed">
+                Estou sempre aberta a discutir novos projetos, ideias criativas ou oportunidades para fazer parte da sua
+                visão.
+              </p>
+              <Button asChild size="lg">
+                <Link href="#contact">Vamos conversar</Link>
+              </Button>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

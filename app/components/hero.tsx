@@ -20,7 +20,7 @@ export function Hero() {
         {/* Greeting */}
         <div className="mb-6">
           <span className="inline-block px-4 py-2 bg-muted rounded-full text-sm font-medium text-muted-foreground mb-4">
-            Olá! Pode me chamar de...
+            Olá, pode me chamar de...
           </span>
         </div>
 
@@ -31,14 +31,14 @@ export function Hero() {
 
         {/* Subtitle */}
         <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-8 font-light max-w-3xl mx-auto">
-          Desenvolvedora Full Stack focada em aplicações que conectam design e
+          Desenvolvedor Full Stack especializado em criar experiências web modernas e aplicações que conectam design e
           funcionalidade
         </h2>
 
         {/* Description */}
         <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-          Construo interfaces digitais acessíveis e performáticas usando as mais modernas tecnologias web. Confira
-          alguns dos meus projetos pessoais e profissionais!
+          Construo interfaces digitais acessíveis e performáticas usando as mais modernas tecnologias web. 
+          Confira alguns dos meus projetos pessoais e profissionais.
         </p>
 
         {/* CTA Buttons */}
@@ -50,9 +50,11 @@ export function Hero() {
             </Link>
           </Button>
 
-          <Button variant="outline" size="lg" className="text-base px-8 py-3 bg-transparent">
-            <Download className="mr-2 h-4 w-4" />
-            Download CV
+          <Button variant="outline" size="lg" className="text-base px-8 py-3 bg-transparent" asChild>
+            <a href="/cv-thabata-dornelas.pdf" download="Thabata_Dornelas_CV.pdf">
+              <Download className="mr-2 h-4 w-4" />
+              Download CV
+            </a>
           </Button>
         </div>
 
