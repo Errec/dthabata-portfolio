@@ -1,0 +1,53 @@
+{
+  // --- Aparência ---
+  "workbench.colorTheme": "Dark++ Italic",
+  "workbench.iconTheme": "vs-seti",
+  "workbench.productIconTheme": "material-product-icons",
+  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.cursorBlinking": "smooth",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.minimap.enabled": false,
+  // --- Material Icon Theme ---
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.folders.associations": {
+    "hooks": "react",
+    "components": "components",
+    "lib": "library",
+    "public": "public",
+    "app": "app",
+    "ui": "views"
+  },
+  "material-icon-theme.files.associations": {
+    "*.tsx": "react_ts",
+    "*.ts": "typescript",
+    "tailwind.config.*": "tailwind"
+  },
+  // --- UX ---
+  "workbench.startupEditor": "none",
+  "explorer.compactFolders": false,
+  "workbench.editor.enablePreview": false,
+  "files.autoSave": "onFocusChange",
+  // --- Terminal ---
+  "terminal.integrated.fontFamily": "'Fira Code', monospace",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.scrollback": 5000,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.minimumContrastRatio": 4.5,
+  // --- Git & código ---
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "editor.formatOnSave": true,
+  // --- Intellisense ---
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.suggestSelection": "first"
+}
