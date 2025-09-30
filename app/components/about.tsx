@@ -3,6 +3,7 @@
 import { Button } from "@/app/components/ui/button"
 import { Card, CardContent } from "@/app/components/ui/card"
 import Link from "next/link"
+import Image from "next/image"
 
 const skills = [
   "HTML",
@@ -43,12 +44,19 @@ export function About() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-16">
           {/* Get to know me */}
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-6">Conheça-me melhor!</h3>
+            <div className="flex justify-center lg:justify-start mb-8">
+              {/* TODO: Change picture and do something animated */}
+              <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
+                <Image src="/professional-female-developer-avatar-illustration.jpg" alt="Thabata Dornelas" fill className="object-cover" />
+              </div>
+            </div>
+
+            <h3 className="text-2xl font-bold text-foreground mb-6">Conheça-me melhor</h3>
 
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Sou um <strong className="text-foreground">Desenvolvedora Full Stack</strong> focada em construir e
-                gerenciar o Front-end de websites e aplicações web que levam ao sucesso do produto geral. Confira alguns
+                Sou uma <strong className="text-foreground">Desenvolvedora Full Stack</strong> focada em construir e
+                gerenciar aplicações web que levam ao sucesso do produto geral. Confira alguns
                 dos meus trabalhos na seção
                 {" "}
                 <Link href="#projects" className="text-primary hover:underline font-medium">
@@ -61,7 +69,7 @@ export function About() {
                 Também gosto de compartilhar conteúdo relacionado às coisas que aprendi ao longo dos anos em{" "}
                 <strong className="text-foreground">Desenvolvimento Web</strong> para que possa ajudar outras pessoas da
                 comunidade Dev. Sinta-se à vontade para se conectar ou me seguir no meu
-                 {" "}
+                {" "}
                 <Link
                   href="https://linkedin.com/in/thabatadornelas"
                   target="_blank"
@@ -82,7 +90,7 @@ export function About() {
               </p>
 
               <p>
-                Estou aberto a oportunidades de <strong className="text-foreground">trabalho</strong> onde posso
+                Estou aberta a oportunidades de <strong className="text-foreground">trabalho</strong> onde posso
                 contribuir, aprender e crescer. Se você tem uma boa oportunidade que combina com minhas habilidades e
                 experiência, não hesite em entrar em
                 {" "}
