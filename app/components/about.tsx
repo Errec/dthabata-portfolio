@@ -40,6 +40,7 @@ export function About() {
           </p>
         </div>
 
+        // TODO: Rethink the whole grid structure with the design pattern
         {/* Content Grid */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-16">
           {/* Get to know me */}
