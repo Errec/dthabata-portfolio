@@ -17,7 +17,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 120);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -34,9 +34,10 @@ const Header = () => {
 
   return (
     <header
+      data-scrolled={isScrolled ? "true" : "false"}
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-background/80 backdrop-blur-md border-b border-border" : "bg-transparent",
+        "header-shell fixed inset-x-0 top-0 z-50 bg-background/0 backdrop-blur-0 transition-[background-color,backdrop-filter] duration-1000 ease-in-out",
+        isScrolled && "bg-background/90 backdrop-blur-lg",
       )}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
