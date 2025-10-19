@@ -5,7 +5,27 @@ import { Button } from "@/components/atoms/Button";
 import { Card, CardContent } from "@/components/atoms/Card";
 import Section from "@/components/atoms/Section";
 import SectionHeading from "@/components/atoms/SectionHeading";
-import { SKILLS } from "@/constants/skills";
+
+const SKILLS = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "Python",
+  "Git",
+  "GitHub",
+  "Responsive Design",
+  "SEO",
+  "SASS",
+  "Tailwind CSS",
+  "PostgreSQL",
+  "MongoDB",
+  "Express.js",
+  "REST APIs",
+];
 
 const AboutSection = () => (
   <Section id="about" aria-labelledby="about-heading">
