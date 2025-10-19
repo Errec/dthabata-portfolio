@@ -1,5 +1,3 @@
-import type { ReactNode } from "react";
-
 import Link from "next/link";
 
 import { cn } from "@/utils/cn";
@@ -7,7 +5,7 @@ import { cn } from "@/utils/cn";
 type IconLinkProps = {
   href: string;
   label: string;
-  icon: ReactNode;
+  icon: React.ReactNode;
   className?: string;
 };
 
