@@ -7,30 +7,33 @@ import { SOCIAL_LINKS } from "@/constants/social-links";
 const Sidebar = () => (
   <>
     <TooltipProvider delayDuration={100}>
-      <aside className="fixed left-0 top-0 z-40 hidden h-screen w-16 flex-col items-center justify-center border-r border-border bg-background/80 backdrop-blur-md lg:flex">
-        <nav aria-label="Redes sociais">
-          <ul className="flex flex-col items-center gap-4">
-            {SOCIAL_LINKS.map((link) => {
-              const Icon = link.icon;
-              return (
-                <li key={link.href}>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <IconLink
-                        href={link.href}
-                        label={link.label}
-                        icon={<Icon aria-hidden className="size-5" />}
-                        className={link.hoverClassName}
-                      />
-                    </TooltipTrigger>
-                    <TooltipContent side="right">{link.label}</TooltipContent>
-                  </Tooltip>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
-        <div className="absolute bottom-8 h-16 w-px bg-border" aria-hidden />
+      <aside className="hidden lg:block lg:sticky lg:top-36 lg:z-40">
+        <div className="flex flex-col items-center gap-6 rounded-3xl border border-border/60 bg-background/80 p-4 shadow-[0_32px_60px_-40px_rgba(15,23,42,0.75)] backdrop-blur-md">
+          <nav aria-label="Redes sociais">
+            <ul className="flex flex-col items-center gap-3">
+              {SOCIAL_LINKS.map((link) => {
+                const Icon = link.icon;
+                return (
+                  <li key={link.href}>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <IconLink
+                          href={link.href}
+                          label={link.label}
+                          icon={<Icon aria-hidden className="size-5" />}
+                          className={link.hoverClassName}
+                          accentColor={link.accentColor}
+                        />
+                      </TooltipTrigger>
+                      <TooltipContent side="right">{link.label}</TooltipContent>
+                    </Tooltip>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
+          <div className="h-12 w-px bg-border/60" aria-hidden />
+        </div>
       </aside>
     </TooltipProvider>
 
@@ -44,6 +47,7 @@ const Sidebar = () => (
             label={link.label}
             icon={<Icon aria-hidden className="size-5" />}
             className={link.hoverClassName}
+            accentColor={link.accentColor}
           />
         );
       })}

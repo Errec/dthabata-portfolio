@@ -31,6 +31,7 @@ const Footer = () => {
                     label={link.label}
                     icon={<Icon aria-hidden className="size-5" />}
                     className={link.hoverClassName}
+                    accentColor={link.accentColor}
                   />
                 );
               })}
