@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#162638" />
+      <stop offset="100%" stop-color="#0b1725" />
+    </linearGradient>
+    <linearGradient id="hair" x1="30%" y1="15%" x2="70%" y2="90%">
+      <stop offset="0%" stop-color="#3c2315" />
+      <stop offset="100%" stop-color="#1f120a" />
+    </linearGradient>
+    <linearGradient id="hood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f6f8fb" />
+      <stop offset="100%" stop-color="#dce3ea" />
+    </linearGradient>
+    <linearGradient id="lip" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45754" />
+      <stop offset="100%" stop-color="#d8736a" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" fill="url(#bg)" rx="24" ry="24" />
+  <circle cx="64" cy="76" r="48" fill="url(#hood)" />
+  <path d="M24 62c0-38 22-62 40-62s40 24 40 62-22 62-40 62S24 100 24 62z" fill="url(#hair)" />
+  <ellipse cx="64" cy="68" rx="30" ry="24" fill="#f6c9a3" />
+  <ellipse cx="50" cy="64" rx="9" ry="7" fill="#fff" />
+  <ellipse cx="78" cy="64" rx="9" ry="7" fill="#fff" />
+  <circle cx="50" cy="64" r="4" fill="#2a180f" />
+  <circle cx="78" cy="64" r="4" fill="#2a180f" />
+  <circle cx="52" cy="62" r="1.8" fill="#fff" />
+  <circle cx="80" cy="62" r="1.8" fill="#fff" />
+  <path d="M45 60c6-4 11-5 19-5" fill="none" stroke="#1a0e08" stroke-width="3" stroke-linecap="round" />
+  <path d="M83 60c-6-4-11-5-19-5" fill="none" stroke="#1a0e08" stroke-width="3" stroke-linecap="round" />
+  <path d="M50 76c6 6 22 6 28 0" fill="none" stroke="#2e1810" stroke-width="3" stroke-linecap="round" />
+  <path d="M54 86c4 4 10 6 10 6s6-2 10-6c-2 6-8 10-10 10s-8-4-10-10z" fill="url(#lip)" />
+  <path d="M30 92c10 12 22 20 34 20s24-8 34-20c-4-8-16-14-34-14S34 84 30 92z" fill="#d4dde6" />
+</svg>

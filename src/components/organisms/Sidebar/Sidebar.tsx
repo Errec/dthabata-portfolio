@@ -20,7 +20,8 @@ const Sidebar = () => (
                         href={link.href}
                         label={link.label}
                         icon={<Icon aria-hidden className="size-5" />}
-                        className={link.hoverClassName}
+                        variant="animated"
+                        accentColor={link.accentColor}
                       />
                     </TooltipTrigger>
                     <TooltipContent side="right">{link.label}</TooltipContent>
@@ -42,7 +43,8 @@ const Sidebar = () => (
             href={link.href}
             label={link.label}
             icon={<Icon aria-hidden className="size-5" />}
-            className={link.hoverClassName}
+            variant="animated"
+            accentColor={link.accentColor}
           />
         );
       })}
