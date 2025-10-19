@@ -221,7 +221,6 @@ html.theme-animating body::before {
   animation: theme-mask-sweep 0.75s steps(70);
 }
 
-
 .social-mask-icon {
   position: relative;
   display: inline-flex;
@@ -230,26 +229,26 @@ html.theme-animating body::before {
   overflow: hidden;
   border-radius: 9999px;
   border: 1px solid var(--border);
-  background: var(--background);
+  background: transparent;
   color: var(--muted-foreground);
-  transition: color 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease, background-color 0.4s ease;
+  transition: color 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
 .social-mask-icon::before {
   content: "";
   position: absolute;
-  inset: -3px;
-  border-radius: inherit;
-  z-index: 0;
+  inset: -4px;
+  z-index: -1;
   opacity: 0;
-  background-image: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
-  background-size: 7100% 100%;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  filter: saturate(1.35) contrast(1.1);
-  transform: scale(0.92);
-  transition: opacity 0.25s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  animation: social-sprite-reset 0.7s steps(70) forwards;
+  background: linear-gradient(135deg, var(--primary) 0%, rgba(var(--teal-rgb), 0.85) 45%, var(--secondary) 100%);
+  -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  -webkit-mask-size: 7100% 100%;
+  mask-size: 7100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  animation: social-mask-reset 0.75s steps(70);
+  transition: opacity 0.2s ease;
 }
 
 .social-mask-icon__inner {
@@ -265,15 +264,13 @@ html.theme-animating body::before {
 
 .social-mask-icon:is(:hover, :focus-visible) {
   color: var(--primary-foreground);
-  background: rgba(var(--teal-rgb), 0.12);
   border-color: rgba(var(--teal-rgb), 0.6);
   box-shadow: 0 8px 22px rgba(var(--teal-rgb), 0.25);
 }
 
 .social-mask-icon:is(:hover, :focus-visible)::before {
   opacity: 1;
-  transform: scale(1);
-  animation: social-sprite-run 0.7s steps(70) forwards;
+  animation: social-mask-reveal 0.75s steps(70);
 }
 
 .social-mask-icon:is(:hover, :focus-visible) .social-mask-icon__inner {
@@ -281,23 +278,27 @@ html.theme-animating body::before {
   color: inherit;
 }
 
-@keyframes social-sprite-run {
+@keyframes social-mask-reveal {
   from {
-    background-position: 0 0;
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
   }
 
   to {
-    background-position: 100% 0;
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
   }
 }
 
-@keyframes social-sprite-reset {
+@keyframes social-mask-reset {
   from {
-    background-position: 100% 0;
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
   }
 
   to {
-    background-position: 0 0;
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
   }
 }
 
@@ -329,7 +330,7 @@ html.theme-animating body::before {
   }
 
   .social-mask-icon {
-    transition: color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    transition: color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   }
 
   .social-mask-icon::before {
@@ -337,8 +338,7 @@ html.theme-animating body::before {
   }
 
   .social-mask-icon:is(:hover, :focus-visible)::before {
-    opacity: 0.65;
-    transform: none;
+    opacity: 0.55;
   }
 
   .social-mask-icon:is(:hover, :focus-visible) .social-mask-icon__inner {
