@@ -221,32 +221,6 @@ html.theme-animating body::before {
   animation: theme-mask-sweep 0.75s steps(70);
 }
 
-
-.header-shell {
-  position: relative;
-  border-bottom: none;
-}
-
-.header-shell::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background-color: var(--border);
-  transform: translateX(-50%) scaleX(0);
-  transform-origin: center;
-  opacity: 0;
-  transition: transform 1s ease, opacity 1s ease, background-color 1s ease;
-}
-
-.header-shell[data-scrolled="true"]::after {
-  transform: translateX(-50%) scaleX(1);
-  opacity: 1;
-}
-
-
 .social-mask-icon {
   position: relative;
   display: inline-flex;
@@ -255,38 +229,26 @@ html.theme-animating body::before {
   overflow: hidden;
   border-radius: 9999px;
   border: 1px solid var(--border);
-  background: var(--background);
-  color: var(--foreground);
-  transition: color 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease, background-color 0.4s ease;
-}
-
-.dark .social-mask-icon {
+  background: transparent;
   color: var(--muted-foreground);
-}
-
-.dark .social-mask-icon:is(:hover, :focus-visible) {
-  color: var(--primary-foreground);
+  transition: color 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
 .social-mask-icon::before {
   content: "";
   position: absolute;
-  inset: -3px;
-  border-radius: inherit;
-  z-index: 0;
+  inset: -4px;
+  z-index: -1;
   opacity: 0;
-  background: linear-gradient(135deg, #ff9a3c 0%, #ff2d55 55%, #f20089 100%);
-  -webkit-mask-image: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
-  mask-image: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  background: linear-gradient(135deg, var(--primary) 0%, rgba(var(--teal-rgb), 0.85) 45%, var(--secondary) 100%);
+  -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
   -webkit-mask-size: 7100% 100%;
   mask-size: 7100% 100%;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-position: 0 0;
-  mask-position: 0 0;
-  transform: scale(0.92);
-  transition: opacity 0.25s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  animation: social-mask-reset 0.7s steps(70) forwards;
+  animation: social-mask-reset 0.75s steps(70);
+  transition: opacity 0.2s ease;
 }
 
 .social-mask-icon__inner {
@@ -297,20 +259,18 @@ html.theme-animating body::before {
   width: 100%;
   align-items: center;
   justify-content: center;
-  color: inherit;
   transition: transform 0.35s ease, color 0.35s ease;
 }
 
 .social-mask-icon:is(:hover, :focus-visible) {
-  background: rgba(255, 105, 75, 0.12);
-  border-color: rgba(255, 79, 108, 0.6);
-  box-shadow: 0 8px 22px rgba(242, 0, 137, 0.25);
+  color: var(--primary-foreground);
+  border-color: rgba(var(--teal-rgb), 0.6);
+  box-shadow: 0 8px 22px rgba(var(--teal-rgb), 0.25);
 }
 
 .social-mask-icon:is(:hover, :focus-visible)::before {
   opacity: 1;
-  transform: scale(1);
-  animation: social-mask-run 0.7s steps(70) forwards;
+  animation: social-mask-reveal 0.75s steps(70);
 }
 
 .social-mask-icon:is(:hover, :focus-visible) .social-mask-icon__inner {
@@ -318,7 +278,7 @@ html.theme-animating body::before {
   color: inherit;
 }
 
-@keyframes social-mask-run {
+@keyframes social-mask-reveal {
   from {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
@@ -370,18 +330,15 @@ html.theme-animating body::before {
   }
 
   .social-mask-icon {
-    transition: color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    transition: color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   }
 
   .social-mask-icon::before {
     animation: none !important;
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
   }
 
   .social-mask-icon:is(:hover, :focus-visible)::before {
-    opacity: 0.65;
-    transform: none;
+    opacity: 0.55;
   }
 
   .social-mask-icon:is(:hover, :focus-visible) .social-mask-icon__inner {

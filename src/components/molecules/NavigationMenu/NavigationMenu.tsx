@@ -10,7 +10,7 @@ type NavigationMenuProps = {
 };
 
 const orientationClassName: Record<NonNullable<NavigationMenuProps["orientation"]>, string> = {
-  horizontal: "flex-row items-center gap-[40px]",
+  horizontal: "flex-row items-center gap-[36px]",
   vertical: "flex-col items-start gap-3",
 };
 
@@ -21,7 +21,7 @@ const NavigationMenu = ({ links, orientation = "horizontal", onNavigate }: Navig
         <li key={link.href}>
           <Link
             href={link.href}
-            className="text-lg font-semibold text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             onClick={onNavigate}
           >
             {link.label}
