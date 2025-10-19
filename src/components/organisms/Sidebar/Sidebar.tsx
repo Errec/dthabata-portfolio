@@ -7,9 +7,9 @@ import { SOCIAL_LINKS } from "@/constants/social-links";
 const Sidebar = () => (
   <>
     <TooltipProvider delayDuration={100}>
-      <aside className="fixed left-0 top-0 z-40 hidden h-screen w-16 flex-col items-center justify-center border-r border-border bg-background/80 backdrop-blur-md lg:flex">
-        <nav aria-label="Redes sociais">
-          <ul className="flex flex-col items-center gap-4">
+      <aside className="fixed left-0 top-1/2 z-40 hidden -translate-y-1/2 rounded-r-md border border-l-0 border-border bg-background/90 p-3 shadow-sm backdrop-blur-md lg:flex">
+        <nav aria-label="Redes sociais" className="flex flex-col items-center">
+          <ul className="flex flex-col items-center gap-3">
             {SOCIAL_LINKS.map((link) => {
               const Icon = link.icon;
               return (
@@ -30,7 +30,6 @@ const Sidebar = () => (
             })}
           </ul>
         </nav>
-        <div className="absolute bottom-8 h-16 w-px bg-border" aria-hidden />
       </aside>
     </TooltipProvider>
 
