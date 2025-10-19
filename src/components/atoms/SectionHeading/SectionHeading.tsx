@@ -16,6 +16,9 @@ const alignment: Record<NonNullable<SectionHeadingProps["align"]>, string> = {
   center: "items-center text-center",
 };
 
+type HeadingLevel = NonNullable<SectionHeadingProps["headingLevel"]>;
+type HeadingTag = `h${HeadingLevel}`;
+
 const SectionHeading = ({
   eyebrow,
   title,
@@ -34,7 +37,7 @@ const SectionHeading = ({
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">{eyebrow}</p>
       ) : null}
       {createElement(
-        `h${headingLevel}` as keyof JSX.IntrinsicElements,
+        `h${headingLevel}` as HeadingTag,
         { id, className: headingClassName },
         title,
       )}
