@@ -86,7 +86,11 @@ const watercolorVariants = {
   hover: {
     scale: [0.45, 1.05, 1.45],
     opacity: [0, 0.5, 0],
-    transition: { duration: 0.9, times: [0, 0.48, 1], ease: "easeOut" },
+    transition: {
+      duration: 0.9,
+      times: [0, 0.48, 1],
+      ease: [0.16, 0.64, 0.44, 1],
+    },
   },
 };
 
@@ -95,7 +99,11 @@ const haloVariants = {
   hover: {
     scale: [0.75, 1.35, 1.75],
     opacity: [0, 0.25, 0],
-    transition: { duration: 1.05, times: [0, 0.52, 1], ease: "easeOut" },
+    transition: {
+      duration: 1.05,
+      times: [0, 0.52, 1],
+      ease: [0.19, 1, 0.22, 1],
+    },
   },
 };
 
