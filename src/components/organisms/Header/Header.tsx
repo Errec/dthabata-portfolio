@@ -34,6 +34,7 @@ const Header = () => {
 
   return (
     <header
+      data-scrolled={isScrolled ? "true" : "false"}
       className={cn(
         "fixed inset-x-0 top-0 z-50 border-b border-border/0 bg-background/0 backdrop-blur-0 transition-[background-color,backdrop-filter,border-color,border-opacity] duration-500 ease-in-out",
         isScrolled && "border-border/80 bg-background/90 backdrop-blur-lg",
