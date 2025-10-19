@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 import { Button } from "@/components/atoms/Button";
 import NavigationMenu from "@/components/molecules/NavigationMenu";
@@ -43,10 +44,17 @@ const Header = () => {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link
           href="#home"
-          className="flex items-center gap-2 text-lg font-semibold text-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="flex items-center gap-3 text-lg font-semibold text-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
-          <span className="flex size-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary/60 text-sm font-bold text-primary-foreground">
-            SN
+          <span className="relative inline-flex size-10 items-center justify-center overflow-hidden rounded-full border border-primary/30 shadow-sm">
+            <Image
+              src="/thabata-avatar.svg"
+              alt="Avatar ilustrado de Thabata Dornelas"
+              width={40}
+              height={40}
+              className="object-cover"
+              priority
+            />
           </span>
           <span className="hidden sm:inline">Thabata Dornelas</span>
         </Link>

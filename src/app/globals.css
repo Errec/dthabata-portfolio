@@ -25,6 +25,7 @@
   /* Light theme with teal accents */
   --background: #f8f9fa;
   --foreground: #2c3333;
+  --foreground-strong: #1a1f21;
   --card: #ffffff;
   --card-foreground: #2c3333;
   --popover: #ffffff;
@@ -64,6 +65,7 @@
   /* Dark theme with teal accents using hex colors */
   --background: #1a1d1d;
   --foreground: #e8eced;
+  --foreground-strong: #f4f7f8;
   --card: #242828;
   --card-foreground: #e8eced;
   --popover: #1a1d1d;

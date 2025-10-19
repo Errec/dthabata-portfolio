@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#162638" />
+      <stop offset="100%" stop-color="#0b1725" />
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="38%" r="68%">
+      <stop offset="0%" stop-color="#2b4d6b" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#0b1725" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="hairGradient" x1="35%" y1="20%" x2="70%" y2="90%">
+      <stop offset="0%" stop-color="#3c2315" />
+      <stop offset="100%" stop-color="#1f120a" />
+    </linearGradient>
+    <linearGradient id="hoodie" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f6f8fb" />
+      <stop offset="100%" stop-color="#dce3ea" />
+    </linearGradient>
+    <linearGradient id="lip" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45754" />
+      <stop offset="100%" stop-color="#d8736a" />
+    </linearGradient>
+    <clipPath id="avatarClip">
+      <circle cx="256" cy="256" r="240" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#avatarClip)">
+    <rect width="512" height="512" fill="url(#bg)" />
+    <circle cx="256" cy="200" r="320" fill="url(#halo)" />
+    <g opacity="0.35" transform="translate(28 0)">
+      <rect x="48" y="44" width="132" height="200" rx="16" fill="#21344a" stroke="#3f6c9a" stroke-width="4" />
+      <rect x="64" y="72" width="96" height="16" rx="8" fill="#5fb8ff" />
+      <rect x="64" y="108" width="82" height="16" rx="8" fill="#4ca6f1" />
+      <rect x="64" y="144" width="104" height="16" rx="8" fill="#8cd0ff" />
+      <rect x="64" y="180" width="72" height="16" rx="8" fill="#4ca6f1" />
+      <rect x="64" y="216" width="96" height="16" rx="8" fill="#5fb8ff" />
+    </g>
+    <g opacity="0.35" transform="translate(324 42)">
+      <rect x="48" y="44" width="132" height="200" rx="16" fill="#243b52" stroke="#3f6c9a" stroke-width="4" />
+      <rect x="64" y="72" width="94" height="16" rx="8" fill="#5fb8ff" />
+      <rect x="64" y="108" width="102" height="16" rx="8" fill="#8cd0ff" />
+      <rect x="64" y="144" width="76" height="16" rx="8" fill="#4ca6f1" />
+      <rect x="64" y="180" width="104" height="16" rx="8" fill="#8cd0ff" />
+      <rect x="64" y="216" width="88" height="16" rx="8" fill="#5fb8ff" />
+    </g>
+    <path d="M128 420c28-78 90-110 128-118l52 24c64 2 110 46 132 94 28 62-18 140-168 140s-210-92-144-140z" fill="url(#hoodie)" />
+    <path d="M198 438c44 50 150 48 204 0-12-50-76-86-104-90l-32 14c-36 4-74 46-68 76z" fill="#ccd8e4" opacity="0.65" />
+    <path d="M140 278c0-128 76-198 148-198s148 70 148 198c0 88-44 180-148 180s-148-92-148-180z" fill="url(#hairGradient)" />
+    <path d="M188 282c0-70 46-126 104-126s104 56 104 126c0 60-32 128-104 128s-104-68-104-128z" fill="#f6c9a3" />
+    <ellipse cx="256" cy="372" rx="84" ry="62" fill="#e8b491" />
+    <ellipse cx="212" cy="332" rx="26" ry="18" fill="#f5b59e" />
+    <ellipse cx="300" cy="332" rx="26" ry="18" fill="#f5b59e" />
+    <path d="M256 408c-20 0-48-8-62-22 6 30 38 52 62 52s56-22 62-52c-14 14-42 22-62 22z" fill="#e4a784" />
+    <path d="M208 332c0-18 20-32 48-32h0c28 0 48 14 48 32" fill="#edb48c" />
+    <path d="M220 334c0 6-6 12-14 12s-14-6-14-12c0-6 6-10 14-10s14 4 14 10z" fill="#2d1a10" />
+    <path d="M348 334c0 6-6 12-14 12s-14-6-14-12c0-6 6-10 14-10s14 4 14 10z" fill="#2d1a10" />
+    <path d="M188 278c30-20 80-46 136-46s106 26 136 46c-18-90-78-136-136-136s-118 46-136 136z" fill="url(#hairGradient)" />
+    <path d="M194 292c24-16 74-42 118-42 46 0 86 18 118 40-16 44-52 70-118 70s-100-26-118-68z" fill="#f5c5a0" />
+    <path d="M212 350c8 12 24 20 44 20s36-8 44-20" fill="none" stroke="#2e1810" stroke-width="6" stroke-linecap="round" />
+    <path d="M232 402c12 10 32 16 52 16s40-6 52-16c-12 18-32 32-52 32s-40-14-52-32z" fill="url(#lip)" />
+    <ellipse cx="236" cy="320" rx="38" ry="26" fill="#fff" />
+    <ellipse cx="276" cy="320" rx="38" ry="26" fill="#fff" transform="translate(80)" />
+    <circle cx="236" cy="320" r="16" fill="#2a180f" />
+    <circle cx="316" cy="320" r="16" fill="#2a180f" />
+    <circle cx="242" cy="314" r="6" fill="#fff" />
+    <circle cx="322" cy="314" r="6" fill="#fff" />
+    <path d="M204 284c18-12 40-20 52-20" fill="none" stroke="#1a0e08" stroke-width="10" stroke-linecap="round" />
+    <path d="M308 264c12 0 36 8 52 20" fill="none" stroke="#1a0e08" stroke-width="10" stroke-linecap="round" />
+    <path d="M204 454c34 32 58 48 52 92h0c-64-8-110-46-134-84 12-16 46-32 82-8z" fill="#c6d1db" opacity="0.7" />
+    <path d="M308 454c-34 32-58 48-52 92h0c64-8 110-46 134-84-12-16-46-32-82-8z" fill="#c6d1db" opacity="0.7" />
+    <g opacity="0.75" transform="translate(132 392)">
+      <text x="0" y="0" font-family="'Fira Code', 'Courier New', monospace" font-size="20" fill="#7bd3ff" xml:space="preserve">
+        const developer = {'\n'}
+      </text>
+      <text x="0" y="26" font-family="'Fira Code', 'Courier New', monospace" font-size="20" fill="#7bd3ff" xml:space="preserve">
+         name: 'Thabata',
+      </text>
+      <text x="0" y="52" font-family="'Fira Code', 'Courier New', monospace" font-size="20" fill="#7bd3ff" xml:space="preserve">
+         role: 'Full Stack Dev',
+      </text>
+      <text x="0" y="78" font-family="'Fira Code', 'Courier New', monospace" font-size="20" fill="#7bd3ff" xml:space="preserve">
+         stack: ['Next.js', 'Node.js']
+      </text>
+      <text x="0" y="104" font-family="'Fira Code', 'Courier New', monospace" font-size="20" fill="#7bd3ff" xml:space="preserve">
+        };
+      </text>
+    </g>
+  </g>
+</svg>
