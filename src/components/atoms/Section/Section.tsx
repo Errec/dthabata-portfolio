@@ -1,10 +1,10 @@
-import { forwardRef, type ComponentPropsWithoutRef } from "react";
+import { forwardRef } from "react";
 
 import { cn } from "@/utils/cn";
 
-type SectionElement = HTMLElement;
+type SectionElement = HTMLElementTagNameMap["section"];
 
-type SectionProps = ComponentPropsWithoutRef<"section"> & {
+type SectionProps = React.ComponentPropsWithoutRef<"section"> & {
   as?: keyof Pick<HTMLElementTagNameMap, "section" | "div" | "article">;
 };
 

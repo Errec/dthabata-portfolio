@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useState } from "react";
 
 import { Button } from "@/components/atoms/Button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/atoms/Card";
@@ -13,7 +13,7 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSubmitting(true);
 

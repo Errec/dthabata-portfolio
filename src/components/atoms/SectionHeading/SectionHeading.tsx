@@ -1,14 +1,13 @@
-import { cn } from "@/utils/cn";
+import { createElement } from "react";
 
-type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
-type HeadingTag = `h${HeadingLevel}`;
+import { cn } from "@/utils/cn";
 
 type SectionHeadingProps = {
   eyebrow?: string;
   title: string;
   description?: string;
   align?: "left" | "center";
-  headingLevel?: HeadingLevel;
+  headingLevel?: 1 | 2 | 3 | 4 | 5 | 6;
   id?: string;
 };
 
@@ -28,16 +27,17 @@ const SectionHeading = ({
   const headingClassName =
     "text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground tracking-tight";
   const wrapperClassName = cn("mb-16 flex flex-col gap-4", alignment[align]);
-  const HeadingTag = `h${headingLevel}` as HeadingTag;
 
   return (
     <header className={wrapperClassName}>
       {eyebrow ? (
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">{eyebrow}</p>
       ) : null}
-      <HeadingTag id={id} className={headingClassName}>
-        {title}
-      </HeadingTag>
+      {createElement(
+        `h${headingLevel}` as keyof JSX.IntrinsicElements,
+        { id, className: headingClassName },
+        title,
+      )}
       {description ? (
         <p className={cn("max-w-2xl text-base text-muted-foreground", align === "center" && "mx-auto")}>{description}</p>
       ) : null}
