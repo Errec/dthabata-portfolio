@@ -1,6 +1,6 @@
 "use client";
 
-import type { CSSProperties, ReactNode } from "react";
+import type { ReactNode } from "react";
 import Link from "next/link";
 
 import { cn } from "@/utils/cn";
@@ -15,26 +15,17 @@ type IconLinkProps = {
 };
 
 const baseClasses =
-  "social-icon group relative flex size-10 items-center justify-center overflow-hidden rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-primary";
+  "social-mask-icon group relative flex size-10 items-center justify-center overflow-hidden rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-primary";
 
-const IconLink = ({
-  href,
-  label,
-  icon,
-  className,
-  variant = "animated",
-  accentColor,
-}: IconLinkProps) => (
+const IconLink = ({ href, label, icon, className }: IconLinkProps) => (
   <Link
     href={href}
     target={href.startsWith("#") ? undefined : "_blank"}
     rel={href.startsWith("#") ? undefined : "noopener noreferrer"}
     aria-label={label}
-    data-variant={variant}
-    style={accentColor ? ({ "--icon-accent": accentColor } as CSSProperties) : undefined}
     className={cn(baseClasses, className)}
   >
-    <span className="social-icon__inner">{icon}</span>
+    <span className="social-mask-icon__inner">{icon}</span>
   </Link>
 );
 
