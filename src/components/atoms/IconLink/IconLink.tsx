@@ -10,6 +10,8 @@ type IconLinkProps = {
   label: string;
   icon: ReactNode;
   className?: string;
+  variant?: "animated" | "static";
+  accentColor?: string;
 };
 
 const baseClasses =

@@ -30,7 +30,8 @@ const Footer = () => {
                     href={link.href}
                     label={link.label}
                     icon={<Icon aria-hidden className="size-5" />}
-                    className={link.hoverClassName}
+                    variant="static"
+                    accentColor={link.accentColor}
                   />
                 );
               })}
